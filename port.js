@@ -76,6 +76,15 @@ certCards.forEach(function (card) {
   });
 });
 
-closeButton.addEventListener("click", function () {
-  modal.style.display = "none";
+if (closeButton) {
+  closeButton.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+}
+
+const burgerBtn = document.querySelector(".burger-btn");
+const nav = document.querySelector("nav");
+
+burgerBtn.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });

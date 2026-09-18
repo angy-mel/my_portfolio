@@ -51,6 +51,15 @@ nav {
   gap: 30px;
 }
 
+.burger-btn {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+
 .list {
   display: flex;
   gap: 30px;
@@ -707,6 +716,34 @@ footer {
   nav {
     display: none;
   }
+  .burger-btn {
+    display: block;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    z-index: 1000;
+  }
+  nav.active .list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  header {
+    position: relative;
+  }
   .hero-container {
     display: flex;
     flex-direction: column;
@@ -720,6 +757,19 @@ footer {
   /* my works page */
   .works-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .avatar-container {
+    width: 260px;
+    height: 260px;
+  }
+
+  .avatar-img {
+    height: 360px;
+  }
+
+  .avatar-img.head-only {
+    height: 360px;
   }
 }
 
