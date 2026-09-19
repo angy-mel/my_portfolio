@@ -85,6 +85,13 @@ if (closeButton) {
 const burgerBtn = document.querySelector(".burger-btn");
 const nav = document.querySelector("nav");
 
-burgerBtn.addEventListener("click", () => {
+burgerBtn.addEventListener("click", (event) => {
+  event.stopPropagation();
   nav.classList.toggle("active");
+});
+
+document.addEventListener("click", (event) => {
+  if (!nav.contains(event.target)) {
+    nav.classList.remove("active");
+  }
 });
