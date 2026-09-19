@@ -771,6 +771,46 @@ footer {
   .avatar-img.head-only {
     height: 360px;
   }
+  .about-page-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    width: 100%;
+    padding: 30px 20px 10px;
+  }
+
+  .left-side-card {
+    max-width: 400px;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 20px;
+    gap: 25px;
+  }
+  .certificates {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cert-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .language-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .language-list span {
+    width: 80%;
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 520px) {

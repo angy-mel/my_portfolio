@@ -20,8 +20,8 @@ contactButton.addEventListener("click", () => {
   const emailTitle = document.createElement("h3");
   emailTitle.textContent = "Email";
   const emailLink = document.createElement("a");
-  emailLink.href = "mailto:your@email.com";
-  emailLink.textContent = "your@email.com";
+  emailLink.href = "mailto:melnyk001@icloud.com";
+  emailLink.textContent = "melnyk001@icloud.com";
   emailInfo.append(emailTitle, emailLink);
   emailItem.append(emailIcon, emailInfo);
 
@@ -34,8 +34,8 @@ contactButton.addEventListener("click", () => {
   const phoneTitle = document.createElement("h3");
   phoneTitle.textContent = "Phone";
   const phoneLink = document.createElement("a");
-  phoneLink.href = "tel:+390000000000";
-  phoneLink.textContent = "+39 000 000 0000";
+  phoneLink.href = "tel:+393279139260";
+  phoneLink.textContent = "+39 327 913 9260";
   phoneInfo.append(phoneTitle, phoneLink);
   phoneItem.append(phoneIcon, phoneInfo);
 
@@ -49,7 +49,7 @@ contactButton.addEventListener("click", () => {
   telegramTitle.textContent = "Telegram";
   const telegramLink = document.createElement("a");
   telegramLink.href = "#";
-  telegramLink.textContent = "@yourusername";
+  telegramLink.textContent = "@angyelz";
   telegramInfo.append(telegramTitle, telegramLink);
   telegramItem.append(telegramIcon, telegramInfo);
 
